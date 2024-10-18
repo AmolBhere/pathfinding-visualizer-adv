@@ -1,0 +1,83 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: linear-gradient(135deg, #6dd5ed, #2193b0);
+}
+
+.buttons {
+  margin: 1.5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.buttons button {
+  margin: 1%;
+  width: 150px;
+  height: 50px;
+  background-color: #0e76a8;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.buttons button:hover {
+  background-color: #00ff11;
+  transform: scale(1.05);
+}
+
+/* Grid.css */
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.grid-row {
+  display: flex;
+}
+
+.node {
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.node-start {
+  background-color: #2ecc71;
+  border: 1.2px solid #27ae60;
+  border-radius: 50%;
+}
+
+.node-end {
+  background-color: #e74c3c;
+  border: 1.2px solid #c0392b;
+  border-radius: 50%;
+}
+
+.node-wall {
+  background-color: #000000;
+}
+
+.node-visited {
+  background-color: #3498db;
+  transform: scale(0.98);
+  transition: background-color 0.1s ease, transform 0.1s ease;
+}
+
+.node-shortest-path {
+  background-color: #f1c40f;
+  transform: scale(1.1);
+  transition: background-color 0.1s ease, transform 0.1s ease;
+}
