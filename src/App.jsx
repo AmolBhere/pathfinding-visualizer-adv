@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Grid from './Grid';
-import { dijkstra, bfs, dfs } from './algorithms';
 
 const App = () => {
   const [algorithm, setAlgorithm] = useState('');
@@ -29,7 +28,7 @@ const App = () => {
         <button onClick={clearGrid}>Clear Grid</button>
       </div>
       <Grid 
-        algorithm={algorithm} 
+        algorithm={algorithm}
         clearWallsTrigger={clearWallsTrigger}
         clearGridTrigger={clearGridTrigger}
       />
